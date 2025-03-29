@@ -979,7 +979,16 @@ if (clientdb) {
     $(document).ready(function () {
 
       const products = [];    
-      fetch('https://minitgo.com/api/fetch_products.php')
+      fetch('https://minitzgo.com/api/fetch_products.php', {
+        method: "POST",
+        headers: {
+                'Content-Type': 'application/json',
+                "x-api-key": "2637338988c5f3bbf8d4934dc458b966a21a1d2d56931390f97ce7c4641a2677"
+              },
+              body: {
+                'cid': `${cid}`
+              }
+      })
         .then((response) => {
           if (!response.ok) {
             throw new Error('Network response was not ok');
