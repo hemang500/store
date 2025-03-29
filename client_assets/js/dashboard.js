@@ -57,10 +57,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     // Total Products- starts here
-    const apiKey_totalprod ='be0fbece0783dc6732b25d5fee7886b9';
+    const apiKey_totalprod ='a0c75839fca1668ac6cf45e464a22f4a16f4d2dcbc1e2a5aea4948df42e688ea';
     function fetchProductCount() {
 
-      fetch('https://minitgo.com/api/total_products.php', {
+      fetch('https://minitzgo.com/api/total_products.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -100,11 +100,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     // Total Orders - starts here
-    const apiKey_totalorders = 'be0fbece0783dc6732b25d5fee7886b9';
+    const apiKey_totalorders = '507ba0c2db06231a1a2ce2524f3e12b57d3bc6c0e9d47c5752f5fb9b8f87a3e8';
     function updateTotalOrders() {
      
 
-      fetch('https://minitgo.com/api/total_orders.php', {
+      fetch('https://minitzgo.com/api/total_orders.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
