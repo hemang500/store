@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> 
+<head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="../client_assets/img/apple-icon.png">
@@ -9,15 +9,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-1ZDdbHPVna1dqY7oFxyuJg7P+vxFAl+5C17PqbgcOeL7L2PFuCmehzcd2PmkcjM1yMmP0kGQvKuE2ZwbY0tCeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
- <!-- Bootstrap JS -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="../client_assets/css/addProduct/style.css">
   <link rel="stylesheet" href="../client_assets/js/addProduct/notification.css">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <title>
+  <title  >
    minitgo  client
   </title>
   <!--     Fonts and icons     -->
@@ -32,73 +32,85 @@
   <link id="pagestyle" href="../client_assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
 
   <style>
- 
-/* Default size for larger screens */
-.preview-card{
+    /* Default size for larger screens */
+    .preview-card {
       height: 550px;
     }
-#imageCarousel {
-    width: 225px;
-    height: auto;
-     
-}
 
-#imageCarousel .carousel-inner img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Ensure the entire image fits within the carousel */
-    object-position: center; /* Center the image in case of empty spaces */
-}
-
-/* Responsive adjustments for mobile screens */
-@media (max-width: 768px) {
     #imageCarousel {
-        width: 100%; /* Full width for smaller screens */
-        height: auto; /* Let the height adjust based on the image */
+      width: 225px;
+      height: auto;
+
     }
 
     #imageCarousel .carousel-inner img {
-        width: 100%; /* Fill the available width */
-        height: auto; /* Keep height proportional */
-        object-fit: contain; /* Ensure the whole image is visible without cropping */
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      /* Ensure the entire image fits within the carousel */
+      object-position: center;
+      /* Center the image in case of empty spaces */
     }
-    .preview-card{
-      height: auto;
-    }
-}
-    
-    .modal-footer {
-        justify-content: space-between;
-        gap: 15px;
-        flex-wrap: wrap;
-    }
+
+    /* Responsive adjustments for mobile screens */
     @media (max-width: 768px) {
-        .preview-img {
-            width: 80px;
-            height: 80px;
-        }
+      #imageCarousel {
+        width: 100%;
+        /* Full width for smaller screens */
+        height: auto;
+        /* Let the height adjust based on the image */
+      }
+
+      #imageCarousel .carousel-inner img {
+        width: 100%;
+        /* Fill the available width */
+        height: auto;
+        /* Keep height proportional */
+        object-fit: contain;
+        /* Ensure the whole image is visible without cropping */
+      }
+
+      .preview-card {
+        height: auto;
+      }
     }
-    
-    #strikePrice{
+
+    .modal-footer {
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 768px) {
+      .preview-img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    #strikePrice {
       text-decoration: line-through;
     }
-</style>
+  </style>
   <style>
     /* Media queries for mobile and tablet screens */
     @media (max-width: 767.98px) {
-              /* Extra small devices (phones, less than 768px) */
-              .notify {
-                  margin-top: 150px; /* Example margin-top for mobile screens */
-              }
-          }
-  
-          @media (min-width: 768px) and (max-width: 991.98px) {
-              /* Small devices (tablets, 768px and up) */
-              .notify {
-                  margin-top: 150px; /* Example margin-top for tablet screens */
-              }
-          }
-  
+
+      /* Extra small devices (phones, less than 768px) */
+      .notify {
+        margin-top: 150px;
+        /* Example margin-top for mobile screens */
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+
+      /* Small devices (tablets, 768px and up) */
+      .notify {
+        margin-top: 150px;
+        /* Example margin-top for tablet screens */
+      }
+    }
   </style>
   <style>
     /* Styles for overlay/modal */
@@ -121,7 +133,7 @@
       z-index: 10000;
     }
 
- 
+
     /* .image-preview {
       width: 280px;
       height: 500px;
@@ -141,13 +153,12 @@
 </head>
 
 <body class="g-sidenav-show  bg-gray-100">
-  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl bg-light my-3 fixed-start ms-3 "
-  >
+  <aside
+    class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl bg-light my-3 fixed-start ms-3 ">
     <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0   d-xl-none"
         aria-hidden="true" id="iconSidenav"></i>
-      <a class="navbar-brand m-0" href="dashboard.html"
-        target="_blank">
+      <a class="navbar-brand m-0" href="dashboard.html" target="_blank">
         <img src="https://minitgo.com/assets/minitgo-b_aiJ4qm.png" class="navbar-brand-img h-100" alt="main_logo">
       </a>
     </div>
@@ -235,15 +246,21 @@
         </li>
         <li class="nav-item">
           <a class="nav-link  " href="../pages/manufacture.html">
-            <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-              <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <div
+              class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+              <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>shop</title>
                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <g transform="translate(-1716.000000, -439.000000)" fill="#FFFFFF" fill-rule="nonzero">
                     <g transform="translate(1716.000000, 291.000000)">
                       <g transform="translate(0.000000, 148.000000)">
-                        <path class="color-background opacity-6" d="M46.7199583,10.7414583 L40.8449583,0.949791667 C40.4909749,0.360605034 39.8540131,0 39.1666667,0 L7.83333333,0 C7.1459869,0 6.50902508,0.360605034 6.15504167,0.949791667 L0.280041667,10.7414583 C0.0969176761,11.0460037 -1.23209662e-05,11.3946378 -1.23209662e-05,11.75 C-0.00758042603,16.0663731 3.48367543,19.5725301 7.80004167,19.5833333 L7.81570833,19.5833333 C9.75003686,19.5882688 11.6168794,18.8726691 13.0522917,17.5760417 C16.0171492,20.2556967 20.5292675,20.2556967 23.494125,17.5760417 C26.4604562,20.2616016 30.9794188,20.2616016 33.94575,17.5760417 C36.2421905,19.6477597 39.5441143,20.1708521 42.3684437,18.9103691 C45.1927731,17.649886 47.0084685,14.8428276 47.0000295,11.75 C47.0000295,11.3946378 46.9030823,11.0460037 46.7199583,10.7414583 Z"></path>
-                        <path class="color-background" d="M39.198,22.4912623 C37.3776246,22.4928106 35.5817531,22.0149171 33.951625,21.0951667 L33.92225,21.1107282 C31.1430221,22.6838032 27.9255001,22.9318916 24.9844167,21.7998837 C24.4750389,21.605469 23.9777983,21.3722567 23.4960833,21.1018359 L23.4745417,21.1129513 C20.6961809,22.6871153 17.4786145,22.9344611 14.5386667,21.7998837 C14.029926,21.6054643 13.533337,21.3722507 13.0522917,21.1018359 C11.4250962,22.0190609 9.63246555,22.4947009 7.81570833,22.4912623 C7.16510551,22.4842162 6.51607673,22.4173045 5.875,22.2911849 L5.875,44.7220845 C5.875,45.9498589 6.7517757,46.9451667 7.83333333,46.9451667 L19.5833333,46.9451667 L19.5833333,33.6066734 L27.4166667,33.6066734 L27.4166667,46.9451667 L39.1666667,46.9451667 C40.2482243,46.9451667 41.125,45.9498589 41.125,44.7220845 L41.125,22.2822926 C40.4887822,22.4116582 39.8442868,22.4815492 39.198,22.4912623 Z"></path>
+                        <path class="color-background opacity-6"
+                          d="M46.7199583,10.7414583 L40.8449583,0.949791667 C40.4909749,0.360605034 39.8540131,0 39.1666667,0 L7.83333333,0 C7.1459869,0 6.50902508,0.360605034 6.15504167,0.949791667 L0.280041667,10.7414583 C0.0969176761,11.0460037 -1.23209662e-05,11.3946378 -1.23209662e-05,11.75 C-0.00758042603,16.0663731 3.48367543,19.5725301 7.80004167,19.5833333 L7.81570833,19.5833333 C9.75003686,19.5882688 11.6168794,18.8726691 13.0522917,17.5760417 C16.0171492,20.2556967 20.5292675,20.2556967 23.494125,17.5760417 C26.4604562,20.2616016 30.9794188,20.2616016 33.94575,17.5760417 C36.2421905,19.6477597 39.5441143,20.1708521 42.3684437,18.9103691 C45.1927731,17.649886 47.0084685,14.8428276 47.0000295,11.75 C47.0000295,11.3946378 46.9030823,11.0460037 46.7199583,10.7414583 Z">
+                        </path>
+                        <path class="color-background"
+                          d="M39.198,22.4912623 C37.3776246,22.4928106 35.5817531,22.0149171 33.951625,21.0951667 L33.92225,21.1107282 C31.1430221,22.6838032 27.9255001,22.9318916 24.9844167,21.7998837 C24.4750389,21.605469 23.9777983,21.3722567 23.4960833,21.1018359 L23.4745417,21.1129513 C20.6961809,22.6871153 17.4786145,22.9344611 14.5386667,21.7998837 C14.029926,21.6054643 13.533337,21.3722507 13.0522917,21.1018359 C11.4250962,22.0190609 9.63246555,22.4947009 7.81570833,22.4912623 C7.16510551,22.4842162 6.51607673,22.4173045 5.875,22.2911849 L5.875,44.7220845 C5.875,45.9498589 6.7517757,46.9451667 7.83333333,46.9451667 L19.5833333,46.9451667 L19.5833333,33.6066734 L27.4166667,33.6066734 L27.4166667,46.9451667 L39.1666667,46.9451667 C40.2482243,46.9451667 41.125,45.9498589 41.125,44.7220845 L41.125,22.2822926 C40.4887822,22.4116582 39.8442868,22.4815492 39.198,22.4912623 Z">
+                        </path>
                       </g>
                     </g>
                   </g>
@@ -279,7 +296,7 @@
             <span class="nav-link-text ms-1">Billing</span>
           </a>
         </li>
-        
+
         <li class="nav-item mt-3">
           <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
         </li>
@@ -311,15 +328,17 @@
             </div>
             <span class="nav-link-text ms-1">Profile</span>
           </a>
-          <p class="px-5 text-xs bg-danger p-2 text-white">Make sure your <b>"screen remains active while you are online." </b></p>
+          <p class="px-5 text-xs bg-danger p-2 text-white">Make sure your <b>"screen remains active while you are
+              online." </b></p>
         </li>
 
-         
+
       </ul>
     </div>
     <div class="sidenav-footer mx-3 ">
       <div class="card card-background shadow-none card-background-mask-secondary" id="sidenavCard">
-        <div class="full-background" style="background-image: url('../client_assets/img/curved-images/white-curved.jpeg')">
+        <div class="full-background"
+          style="background-image: url('../client_assets/img/curved-images/white-curved.jpeg')">
         </div>
         <div class="card-body text-start p-3 w-100">
           <div
@@ -358,7 +377,7 @@
           <div class="ms-md-auto pe-md-3 d-flex align-items-center   d-flex flex-column gap-1 position-relative">
 
             <div class="input-group border border-primary ">
-              
+
             </div>
 
             <div id="searchResult" class=" w-100 position-absolute rounded bg-white border "
@@ -372,7 +391,7 @@
           <!-- search bar ends here -->
 
           <ul class="navbar-nav  justify-content-end">
-            <li class="nav-item d-flex align-items-center " >
+            <li class="nav-item d-flex align-items-center ">
               <a href="../pages/profile.html" class="nav-link text-body font-weight-bold px-0 ">
                 <i class="fa fa-user me-sm-1"></i>
                 <span class="d-sm-inline " id="userName">UserName</span>
@@ -389,10 +408,10 @@
             </li>
             <li class="nav-item px-3 d-flex align-items-center">
               <a href="javascript:;" class="nav-link text-body p-0">
-                 
+
               </a>
             </li>
-           
+
           </ul>
         </div>
       </div>
@@ -403,8 +422,8 @@
       <div class="col-12 mt-4">
         <div class="card mb-4">
           <div class="card-header pb-0 p-3">
-            <h6 class="mb-1 text-sm">Products</h6> 
-             
+            <h6 class="mb-1 text-sm">Products</h6>
+
           </div>
           <div class="card-body p-3">
             <div class="  d-flex flex-wrap " id="product">
@@ -442,162 +461,176 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                
-                    <!-- Upper Div -->
-                    <div class="card mb-4 preview-card">
-                      <h5>Preview </h5> 
-                      <p class="text-xs text-danger px-2"><b>Note:</b>"Please upload only product images, ensuring that they do not include any individuals or unrelated objects not intended for sale." </p>
+
+                  <!-- Upper Div -->
+                  <div class="card mb-4 preview-card">
+                    <h5>Preview </h5>
+                    <p class="text-xs text-danger px-2"><b>Note:</b>"Please upload only product images, ensuring that
+                      they do not include any individuals or unrelated objects not intended for sale." </p>
                     <!-- Preview Section -->
-                      <div class="row g-0 ">
-                        <div class="col-md-6">
-                          <div id="imageCarousel" class="carousel slide mt-4 rounded" data-ride="carousel">
-                            <div class="carousel-inner" id="carouselInner"></div>
-                            <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
+                    <div class="row g-0 ">
+                      <div class="col-md-6">
+                        <div id="imageCarousel" class="carousel slide mt-4 rounded" data-ride="carousel">
+                          <div class="carousel-inner" id="carouselInner"></div>
+                          <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
                         </div>
-                        </div>
-                        <div class="col-md-6 text-right bg-light bg-gradient rounded preview-card">
-                          <div class="card-body" id="typingResults">
-                            <p class="card-text"><small class="text-muted">category: <span id="previewCategory"></span></small> </p>
-                            <!-- <p id="typingResultSubcategory"></p> -->
-                      
-        <div class="mt-3">
-          <p><strong>Title:</strong> <span id="previewTitle"></span> | <strong>Colour:</strong> <span id="previewColour"></span></p>
-          
-          <p><strong>Stock:</strong> <span id="previewStock"></span> | <strong>Size:</strong> <span id="previewSize"></span></p>
-          <p><strong>Offer:</strong> <span id="previewOffer"></span>%</p>
-          <p ><b>Actual Price:</b> <span id="previewPrice"></span></p>
-          <p><strong>Offer Price:</strong> ₹<span id="previewFinalPrice"></span></p>
-          <p id="pricePreview"><b>Price:</b> <span id="strikePrice"></span> ₹<span id="finalPricePreview"></span></p>
+                      </div>
+                      <div class="col-md-6 text-right bg-light bg-gradient rounded preview-card">
+                        <div class="card-body" id="typingResults">
+                          <p class="card-text"><small class="text-muted">category: <span
+                                id="previewCategory"></span></small> </p>
+                          <!-- <p id="typingResultSubcategory"></p> -->
 
-          <p><strong>Description:</strong> <span id="previewDescription"></span></p>
-      </div>
+                          <div class="mt-3">
+                            <p><strong>Title:</strong> <span id="previewTitle"></span> | <strong>Colour:</strong> <span
+                                id="previewColour"></span></p>
 
-                            <button class="btn btn-secondary mt-2 d-md-none" disabled>Add to cart</button>
-                            <button class="btn btn-primary" disabled>Buy now</button>
+                            <p><strong>Stock:</strong> <span id="previewStock"></span> | <strong>Size:</strong> <span
+                                id="previewSize"></span></p>
+                            <p><strong>Offer:</strong> <span id="previewOffer"></span>%</p>
+                            <p><b>Actual Price:</b> <span id="previewPrice"></span></p>
+                            <p><strong>Offer Price:</strong> ₹<span id="previewFinalPrice"></span></p>
+                            <p id="pricePreview"><b>Price:</b> <span id="strikePrice"></span> ₹<span
+                                id="finalPricePreview"></span></p>
+
+                            <p><strong>Description:</strong> <span id="previewDescription"></span></p>
                           </div>
+
+                          <button class="btn btn-secondary mt-2 d-md-none" disabled>Add to cart</button>
+                          <button class="btn btn-primary" disabled>Buy now</button>
                         </div>
                       </div>
                     </div>
-<!-- end of preview session-->
-                    <div class="mb-3 rounded p-3 card shadow">
-                      <h6>Add Images</h6>
-                      <div class="row">
-                        <div class="col-auto">
-                          <button type="button" class="btn btn-primary fs-5" data-bs-toggle="collapse"
-                            data-bs-target="#collapseRight" aria-expanded="false"
-                            aria-controls="collapseRight">+</button>
-                        </div>
-                        <div class="col">
-                          <div class="collapse mt-1" id="collapseRight">
-                            <div>
-                              <!-- Upper Div -->
-                              <div class="mb-3">
-                                <div class="row">
-                                  <div class="col-md-4">
-                                      <!-- Trigger Button -->
-    <!--button class="btn btn-secondary me-3" type="button" data-bs-toggle="modal" data-bs-target="#cameraModal" onclick="accessCamera()">
+                  </div>
+                  <!-- end of preview session-->
+                  <div class="mb-3 rounded p-3 card shadow">
+                    <h6>Add Images</h6>
+                    <div class="row">
+                      <div class="col-auto">
+                        <button type="button" class="btn btn-primary fs-5" data-bs-toggle="collapse"
+                          data-bs-target="#collapseRight" aria-expanded="false" aria-controls="collapseRight">+</button>
+                      </div>
+                      <div class="col">
+                        <div class="collapse mt-1" id="collapseRight">
+                          <div>
+                            <!-- Upper Div -->
+                            <div class="mb-3">
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <!-- Trigger Button -->
+                                  <!--button class="btn btn-secondary me-3" type="button" data-bs-toggle="modal" data-bs-target="#cameraModal" onclick="accessCamera()">
       Capture Photo <i class="fas fa-camera fs-5"></i>
-                                  </button--> <p style="font-size: xx-small;">Add images by clicking on + button </p>
+                                  </button-->
+                                  <p style="font-size: xx-small;">Add images by clicking on + button </p>
 
- 
-                                <!-- MODAL EDITS START HERE-->
-                                  </div>
-                               
-                                  <div class="col-md-4">
-                                    <!-- File Upload Input with Add Icon -->
-                                    <label for="imageUploadInput" class="btn btn-primary form-control mb-2">
-                                      <i class="fas fa-plus"></i> <!-- Add Icon -->
-                                      <span class="ml-2">Upload</span>
-                                      <input type="file" class="form-control form-control-sm d-none" id="imageUploadInput" accept="image/*" multiple>
-                                    </label>
-                                  
-                                    <!-- Camera Capture Input with Camera Icon -->
-                                    <label for="cameraCaptureInput" class="btn btn-secondary form-control mb-2">
-                                      <i class="fas fa-camera"></i> <!-- Camera Icon -->
-                                      <span class="ml-2">Camera</span>
-                                      <input type="file" id="cameraCaptureInput" accept="image/*" capture="camera" class="form-control d-none">
-                                    </label>
-                                  </div>
-                                  
+
+                                  <!-- MODAL EDITS START HERE-->
                                 </div>
-                              </div>
 
+                                <div class="col-md-4">
+                                  <!-- File Upload Input with Add Icon -->
+                                  <label for="imageUploadInput" class="btn btn-primary form-control mb-2">
+                                    <i class="fas fa-plus"></i> <!-- Add Icon -->
+                                    <span class="ml-2">Upload</span>
+                                    <input type="file" class="form-control form-control-sm d-none" id="imageUploadInput"
+                                      accept="image/*" multiple>
+                                  </label>
+
+                                  <!-- Camera Capture Input with Camera Icon -->
+                                  <label for="cameraCaptureInput" class="btn btn-secondary form-control mb-2">
+                                    <i class="fas fa-camera"></i> <!-- Camera Icon -->
+                                    <span class="ml-2">Camera</span>
+                                    <input type="file" id="cameraCaptureInput" accept="image/*" capture="camera"
+                                      class="form-control d-none">
+                                  </label>
+                                </div>
+
+                              </div>
                             </div>
+
                           </div>
                         </div>
                       </div>
                     </div>
+                  </div>
 
-                    <!-- Lower Div -->
-                    <div>
-                      <!-- Upper Inner Div -->
-                   
- <!-- Input fields for additional product details -->
- 
- <div id="inputFields" class="mt-2">
- 
-  <h3>Product Details</h3>
-    
+                  <!-- Lower Div -->
+                  <div>
+                    <!-- Upper Inner Div -->
 
-  <div class="form-group">
-      <label for="title">Title</label>
-      <input type="text" id="title" placeholder="Title" required class="form-control">
-  </div>
-  <div class="form-group">
-      <label for="price">Price</label>
-      <input type="number" id="price" placeholder="Price" required class="form-control" oninput="calculateOfferPrice()">
-  </div>
-  <div class="form-group">
-      <label for="stock">Stock</label>
-      <input type="number" id="stock" placeholder="Stock" required class="form-control">
-  </div>
-  <div class="form-group">
-      <label for="category">Category</label>
-      <input type="text" id="category" placeholder="Category" required class="form-control">
-  </div>
-  <div class="form-group">
-      <label for="colour">Colour</label>
-      <input type="text" id="colour" placeholder="Colour" required class="form-control">
-  </div>
-  <div class="form-group">
-      <label for="size">Size</label>
-      <input type="text" id="size" placeholder="Size" required class="form-control">
-  </div>
-  <div class="form-group">
-      <label for="description">Description</label>
-      <textarea id="description" placeholder="Description" required class="form-control"></textarea>
-  </div>
-  <!--  initialising the input tag for cid to send the value to the db -->
-  <input class="d-none" type="number" id="cid">
-  <input class="d-none" type="text" id="fname">
-   
+                    <!-- Input fields for additional product details -->
 
-  <!-- Offer Input -->
-  <div class="form-group">
-      <label for="offer">Offer (%)</label>
-      <input type="number" id="offer" placeholder="Offer (%)" required class="form-control mt-2" oninput="calculateOfferPrice()">
-  </div>
-  
-</div>
-<ul>
-  <li><p class="text-xs text-danger">The products will be visible after the review.</p> </li>
-  <li><p class="text-xs text-danger">make sure all the image are properly taken</p> </li>
-  <li><strong class="text-xs text-primary">Contact us for any queries at +91 7032327702. </strong> </li>
-</ul>
-                  
- <button id="submitButton" class="btn btn-success mt-2 ">upload</button>
- 
- 
-  
- 
-          <!--div class="modal fade shadow" id="editProductModal" tabindex="-1" aria-labelledby="editProductModalLabel"
+                    <div id="inputFields" class="mt-2">
+
+                      <h3>Product Details</h3>
+
+
+                      <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" placeholder="Title" required class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="number" id="price" placeholder="Price" required class="form-control"
+                          oninput="calculateOfferPrice()">
+                      </div>
+                      <div class="form-group">
+                        <label for="stock">Stock</label>
+                        <input type="number" id="stock" placeholder="Stock" required class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label for="category">Category</label>
+                        <input type="text" id="category" placeholder="Category" required class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label for="colour">Colour</label>
+                        <input type="text" id="colour" placeholder="Colour" required class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label for="size">Size</label>
+                        <input type="text" id="size" placeholder="Size" required class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" placeholder="Description" required class="form-control"></textarea>
+                      </div>
+                      <!--  initialising the input tag for cid to send the value to the db -->
+                      <input class="d-none" type="number" id="cid">
+                      <input class="d-none" type="text" id="fname">
+
+
+                      <!-- Offer Input -->
+                      <div class="form-group">
+                        <label for="offer">Offer (%)</label>
+                        <input type="number" id="offer" placeholder="Offer (%)" required class="form-control mt-2"
+                          oninput="calculateOfferPrice()">
+                      </div>
+
+                    </div>
+                    <ul>
+                      <li>
+                        <p class="text-xs text-danger">The products will be visible after the review.</p>
+                      </li>
+                      <li>
+                        <p class="text-xs text-danger">make sure all the image are properly taken</p>
+                      </li>
+                      <li><strong class="text-xs text-primary">Contact us for any queries at +91 7032327702. </strong>
+                      </li>
+                    </ul>
+
+                    <button id="submitButton" class="btn btn-success mt-2 ">upload</button>
+
+
+
+
+                    <!--div class="modal fade shadow" id="editProductModal" tabindex="-1" aria-labelledby="editProductModalLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
               <div class="modal-content">
@@ -746,7 +779,7 @@
                       </div>
 
                       <!-- Textarea for Description -->
-                      <!--div class="mb-3">
+                    <!--div class="mb-3">
                         <label for="descriptionEdit" class="form-label">Description</label>
                         <textarea class="form-control" id="descriptionEdit" rows="3" name="description"
                           required></textarea>
@@ -764,7 +797,7 @@
           </div -->
 
 
-          <!-- EDIT PRODUCT MODAL ENDS HERE -->
+                    <!-- EDIT PRODUCT MODAL ENDS HERE -->
 
   </main>
   <script>
@@ -938,48 +971,48 @@
     }
   </script>
   <script>
-// Declare cid globally
-let cid;
+    // Declare cid globally
+    let cid;
 
-const dbUserJSON = localStorage.getItem('dbUser');
+    const dbUserJSON = localStorage.getItem('dbUser');
 
-if (dbUserJSON) {
-  const dbUser = JSON.parse(dbUserJSON);
-  cid = dbUser.cid;
-  coordinates = dbUser.coordinates;
-  console.log("check cid", cid);
-} else {
-  console.log("dbUser not found in local storage");
-}
+    if (dbUserJSON) {
+      const dbUser = JSON.parse(dbUserJSON);
+      cid = dbUser.cid;
+      coordinates = dbUser.coordinates;
+      console.log("check cid", cid);
+    } else {
+      console.log("dbUser not found in local storage");
+    }
 
-const showcid =document.getElementById("cid");
-showcid.value=cid;
- 
-// full clientname getting 
-let fname;
+    const showcid = document.getElementById("cid");
+    showcid.value = cid;
 
-const clientdb = localStorage.getItem('dbUser');
+    // full clientname getting 
+    let fname;
 
-if (clientdb) {
-  const cdbUser = JSON.parse(clientdb);
-  const cfname = cdbUser.first_name;
-  const clname = cdbUser.last_name;
-  fname = cfname + " " + clname;  // Combine first and last name with a space
-  console.log("check fname:", fname);
+    const clientdb = localStorage.getItem('dbUser');
 
-  // Set the full name to the input field
-  const cfullname = document.getElementById("fname");
-  cfullname.value = fname;
-} else {
-  console.log("dbUser not found in local storage");
-}
+    if (clientdb) {
+      const cdbUser = JSON.parse(clientdb);
+      const cfname = cdbUser.first_name;
+      const clname = cdbUser.last_name;
+      fname = cfname + " " + clname;  // Combine first and last name with a space
+      console.log("check fname:", fname);
 
-// Now cid is accessible globally in this script
- 
+      // Set the full name to the input field
+      const cfullname = document.getElementById("fname");
+      cfullname.value = fname;
+    } else {
+      console.log("dbUser not found in local storage");
+    }
+
+    // Now cid is accessible globally in this script
+
     $(document).ready(function () {
 
       const products = [];    
-      fetch('https://minitzgo.com/api/fetch_products.php')
+      fetch('https://minitgo.com/api/fetch_products.php')
         .then((response) => {
           if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -990,8 +1023,8 @@ if (clientdb) {
           if (data.status === false) {
             console.log(data.message);
           } else {
-            
-           const clientdata = data.data.filter(product=> product.cid == cid);
+
+            const clientdata = data.data.filter(product => product.cid == cid);
             products.push(...clientdata)
             renderProducts(products)
 
@@ -1061,7 +1094,7 @@ if (clientdb) {
         allProducts.forEach((product, index) => {
           // if (product.client_id == clientid)
           // if (product.client_id) {
-            if(product){
+          if (product) {
             const carouselId = 'carouselExampleControls' + index;
             // Build the HTML markup for the product
             productHTML += "<div class='col-xl-3 col-md-6 mb-xl-0 mb-4 my-2 r  px-3 py-2 shadow  rounded'>";
@@ -1102,7 +1135,7 @@ if (clientdb) {
             if (daysDifference <= 5) {
               productHTML += "<div class='d-flex gap-3'>";
               productHTML += "<p class='text-xs text-disabled'>" + product.category + "</p>";
-              
+
               productHTML += "<p class='badge bg-primary'>New</p>";
               productHTML += "</div>";
               productHTML += "<div class='d-flex gap-3'>";
@@ -1110,7 +1143,7 @@ if (clientdb) {
               productHTML += "</div>";
             } else {
               productHTML += "<div class='d-flex gap-3'>";
-            productHTML += "<h6>" + product.product_title + "</h6>";
+              productHTML += "<h6>" + product.product_title + "</h6>";
 
               productHTML += "</div>";
               productHTML += "<div class='d-flex gap-3'>";
@@ -1119,18 +1152,18 @@ if (clientdb) {
               productHTML += "</div>";
 
               productHTML += "<div class='d-flex gap-3'>";
-                productHTML += "<p><b>Product: " + product.pid + " </b></p>";
-                productHTML += "<p><b>Pcode: " + product.pcode + "</b></p>";
+              productHTML += "<p><b>Product: " + product.pid + " </b></p>";
+              productHTML += "<p><b>Pcode: " + product.pcode + "</b></p>";
               productHTML += "</div>";
             }
 
             productHTML += "<div class='d-flex justify-content-between  align-items-center '>";
-              productHTML += "<p class='text-xs'><b>category:</b> " + product.category + "</p>";
+            productHTML += "<p class='text-xs'><b>category:</b> " + product.category + "</p>";
 
             productHTML += "<div class='d-flex gap-1  pt-2'>";
 
             productHTML += "<p class='text-xs '><b>colour:</b> " + product.product_color1 + " </p>";
-            if (product.product_color2!=="") {
+            if (product.product_color2 !== "") {
               productHTML += "<p class='text-sm'> | " + product.product_color2 + "</p>";
             }
             productHTML += "</div>";
@@ -1138,19 +1171,19 @@ if (clientdb) {
 
 
             productHTML += "<div class='d-flex justify-content-between  '>";
-              productHTML += "<p class='text-sm'> <b>Brand:</b> " + product.product_brand + "</p>";
+            productHTML += "<p class='text-sm'> <b>Brand:</b> " + product.product_brand + "</p>";
 
-              productHTML += "<h6>Price:" + product.product_price + "₹</h6>";
+            productHTML += "<h6>Price:" + product.product_price + "₹</h6>";
             productHTML += "</div>";
 
             productHTML += "<div class='d-flex justify-content-between  '>";
             productHTML += "<p class='text-sm' ><b>material:</b> " + product.material + "</p>";
-            productHTML += "<h6 > Offer: " + product.offers + "%</h6>"; 
+            productHTML += "<h6 > Offer: " + product.offers + "%</h6>";
 
             productHTML += "<span class='text-sm'><strong>Size:</strong> " + product.product_size + "</span>";
 
             productHTML += "</div>";
- 
+
 
             productHTML += "<div class='d-flex justify-content-between mb-1 bg-light p-2 rounded  '>";
             productHTML += "<button type='button' class='btn-white rounded' onclick='updateStock(\"" + product.pid + "\", \"decrease\")' style='border:none'> -</button>";
@@ -1188,73 +1221,77 @@ if (clientdb) {
 
     });
     function deleteProduct(pid) {
-  // Ask for confirmation
-  if (confirm("Are you sure you want to delete this product?")) {
-    const apiUrl = 'https://minitgo.com/api/delete_products.php';
-    const apiKey = 'be0fbece0783dc6732b25d5fee7886b9'; // Replace with your actual API key
+      // Ask for confirmation
+      if (confirm("Are you sure you want to delete this product?")) {
+        const apiUrl = 'https://minitzgo.com/api/delete_products.php';
+        const apiKey = 'afb5678cd20a7bc0eabcc16ddfab114c2ae58321766974b55f03bfbb9a19c55b'; // Replace with your actual API key
 
-    $.ajax({
-      url: apiUrl,
-      type: 'POST',
-      headers: {
-        'x-api-key': apiKey,
-        'Content-Type': 'application/json',
-      },
-      data: JSON.stringify({ pid: pid }),
-      success: function (response) {
-        // Handle success response
-        console.log('Product deleted successfully:', response);
-        // Reload the page after deletion
-        location.reload();
-      },
-      error: function (xhr, status, error) {
-        // Handle error response
-        console.error('Error deleting product:', error);
+        $.ajax({
+          url: apiUrl,
+          type: 'POST',
+          headers: {
+            'x-api-key': apiKey,
+            'Content-Type': 'application/json',
+          },
+          data: JSON.stringify({ pid: pid }),
+          success: function (response) {
+            // Handle success response
+            console.log('Product deleted successfully:', response);
+            // Reload the page after deletion
+            location.reload();
+          },
+          error: function (xhr, status, error) {
+            // Handle error response
+            console.error('Error deleting product:', error);
+          }
+        });
       }
-    });
-  }
-}
-
-//stock update function
-function updateStock(productId, action) {
-  // Get the current stock value
-  let stockElement = document.querySelector(`#stock-${productId}`);
-  let currentStock = parseInt(stockElement.innerText);
-
-  // Adjust stock based on the action
-  if (action === 'increase') {
-    currentStock += 1;
-  } else if (action === 'decrease' && currentStock > 0) {
-    currentStock -= 1;
-  }
-
-  // Update the stock value in the UI instantly
-  stockElement.innerText = currentStock;
-
-  // Prepare the data to send
-  let data = {
-    pid: productId,
-    stock: currentStock,
-  };
-
-  // Send the AJAX request to the API
-  $.ajax({
-    url: 'https://minitgo.com/api/stockupdate.php',  // Replace with your API endpoint
-    method: 'POST',
-    contentType: 'application/json',
-    data: JSON.stringify(data),
-    success: function(response) {
-      if (response.status === true) {
-        console.log('Stock updated successfully');
-      } else {
-        console.log('Error updating stock:', response.message);
-      }
-    },
-    error: function(err) {
-      console.log('AJAX error:', err);
     }
-  });
-}
+
+    //stock update function
+    function updateStock(productId, action) {
+      // Get the current stock value
+      let stockElement = document.querySelector(`#stock-${productId}`);
+      let currentStock = parseInt(stockElement.innerText);
+
+      // Adjust stock based on the action
+      if (action === 'increase') {
+        currentStock += 1;
+      } else if (action === 'decrease' && currentStock > 0) {
+        currentStock -= 1;
+      }
+
+      // Update the stock value in the UI instantly
+      stockElement.innerText = currentStock;
+
+      // Prepare the data to send
+      let data = {
+        pid: productId,
+        stock: currentStock,
+      };
+
+      // Send the AJAX request to the API
+      $.ajax({
+        url: 'https://minitzgo.com/api/stockupdate.php',  // Replace with your API endpoint
+        method: 'POST',
+        contentType: 'application/json',
+        headers: {
+          'x-api-key': '0ef1e68d55ec041cfa7bc9695b585515de7234681c01aff5a19e1e4a170787d5'
+        },
+        data: JSON.stringify(data),
+        success: function (response) {
+          if (response.status === true) {
+            console.log('Stock updated successfully');
+          } else {
+            console.log('Error updating stock:', response.message);
+          }
+        },
+        error: function (err) {
+          console.log('AJAX error:', err);
+          alert("error")
+        }
+      });
+    }
 
   </script>
   <!--   Core JS Files   -->
@@ -1264,21 +1301,21 @@ function updateStock(productId, action) {
   <script src="../client_assets/js/plugins/perfect-scrollbar.min.js"></script>
   <script src="../client_assets/js/plugins/smooth-scrollbar.min.js"></script>
   <script src="../client_assets/js/plugins/chartjs.min.js"></script>
-  <script src="../client_assets/js/notification.js"></script>           
-  <script src="../client_assets/js/dashboard.js"></script>   
-  <script src="../client_assets/js/upload.js"></script>   
+  <script src="../client_assets/js/notification.js"></script>
+  <script src="../client_assets/js/dashboard.js"></script>
+  <script src="../client_assets/js/upload.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="../client_assets/js/addProduct/notification.js"> </script>
+  <script src="../client_assets/js/addProduct/notification.js"> </script>
   <!-- Github buttons -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="../client_assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script>
- 
+
   <audio id="notificationSound">
-      <source src="../client_assets/sound/xperia-x10-sms-1193.mp3" type="audio/wav">
-      Your browser does not support the audio element.
+    <source src="../client_assets/sound/xperia-x10-sms-1193.mp3" type="audio/wav">
+    Your browser does not support the audio element.
   </audio>
- 
+
 
 </body>
 

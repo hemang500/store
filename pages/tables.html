@@ -22,32 +22,35 @@
   <style>
     /* Media queries for mobile and tablet screens */
     @media (max-width: 767.98px) {
-              /* Extra small devices (phones, less than 768px) */
-              .notify {
-                  margin-top: 150px; /* Example margin-top for mobile screens */
-              }
-          }
-  
-          @media (min-width: 768px) and (max-width: 991.98px) {
-              /* Small devices (tablets, 768px and up) */
-              .notify {
-                  margin-top: 150px; /* Example margin-top for tablet screens */
-              }
-          }
-  
+
+      /* Extra small devices (phones, less than 768px) */
+      .notify {
+        margin-top: 150px;
+        /* Example margin-top for mobile screens */
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+
+      /* Small devices (tablets, 768px and up) */
+      .notify {
+        margin-top: 150px;
+        /* Example margin-top for tablet screens */
+      }
+    }
   </style>
 </head>
 
 <body class="g-sidenav-show  bg-gray-100" id="sidenavclass">
-  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 bg-light fixed-start ms-3 "
+  <aside
+    class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 bg-light fixed-start ms-3 "
     id="sidenav-main">
     <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-xl-none"
         aria-hidden="true" id="closeBtn"></i>
-      <a class="navbar-brand m-0" href="dashboard.html"
-        target="_blank">
+      <a class="navbar-brand m-0" href="dashboard.html" target="_blank">
         <img src="https://minitgo.com/assets/minitgo-b_aiJ4qm.png" class="navbar-brand-img h-100" alt="main_logo">
-         
+
       </a>
     </div>
     <hr class="horizontal dark mt-0">
@@ -183,7 +186,7 @@
             <span class="nav-link-text ms-1">Billing</span>
           </a>
         </li>
-        
+
 
         <li class="nav-item mt-3">
           <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
@@ -216,15 +219,17 @@
             </div>
             <span class="nav-link-text ms-1">Profile</span>
           </a>
-          <p class="px-5 text-xs bg-danger p-2 text-white">Make sure your <b>"screen remains active while you are online." </b></p>
+          <p class="px-5 text-xs bg-danger p-2 text-white">Make sure your <b>"screen remains active while you are
+              online." </b></p>
         </li>
 
-         
+
       </ul>
     </div>
     <div class="sidenav-footer mx-3 ">
       <div class="card card-background shadow-none card-background-mask-secondary" id="sidenavCard">
-        <div class="full-background" style="background-image: url('../client_assets/img/curved-images/white-curved.jpeg')">
+        <div class="full-background"
+          style="background-image: url('../client_assets/img/curved-images/white-curved.jpeg')">
         </div>
         <div class="card-body text-start p-3 w-100">
           <div
@@ -280,26 +285,28 @@
             </li>
             <li class="nav-item px-3 d-flex align-items-center">
               <a href="javascript:;" class="nav-link text-body p-0">
-                 
+
               </a>
             </li>
             <li id="notificationBell" class="nav-item dropdown pe-2 d-flex align-items-center">
-              <a href="javascript:;" class="nav-link text-body p-0" id="dropdownMenuButton" onclick="toggleDropdown()" aria-expanded="false">
-                  <i class="fa fa-bell cursor-pointer"></i>
-                  <sup id="notificationCount"  class=" rounded" style="font-size:15px; color: red;   "></sup>
+              <a href="javascript:;" class="nav-link text-body p-0" id="dropdownMenuButton" onclick="toggleDropdown()"
+                aria-expanded="false">
+                <i class="fa fa-bell cursor-pointer"></i>
+                <sup id="notificationCount" class=" rounded" style="font-size:15px; color: red;   "></sup>
               </a>
 
               <!-- Bell icon with notification count -->
 
-              <ul class="dropdown-menu dropdown-menu-end notify bg-gradient-light position-absolute px-2 py-3 me-sm-n4" id="dropdownMenu" aria-labelledby="dropdownMenuButton">
+              <ul class="dropdown-menu dropdown-menu-end notify bg-gradient-light position-absolute px-2 py-3 me-sm-n4"
+                id="dropdownMenu" aria-labelledby="dropdownMenuButton">
                 <!-- notification body -->
-                  <li  id="notificationbody">
-                   
-                  </li>
+                <li id="notificationbody">
+
+                </li>
                 <!-- notification body ends -->
 
               </ul>
-          </li>
+            </li>
           </ul>
         </div>
       </div>
@@ -386,17 +393,17 @@
                 </script>,
                 made with <i class="fa fa-heart"></i> by
                 <a href="https://www.minitgo.com" class="font-weight-bold" target="_blank">Minitgo</a>
-                 
+
               </div>
             </div>
-            
+
           </div>
         </div>
       </footer>
     </div>
   </main>
   <div class="fixed-plugin">
-    
+
     <div class="card shadow-lg ">
       <div class="card-header pb-0 pt-3 ">
         <div class="float-start">
@@ -425,218 +432,227 @@
             <span class="badge filter bg-gradient-danger" data-color="danger" onclick="sidebarColor(this)"></span>
           </div>
         </a>
-         
-  <!--   Core JS Files   -->
-  <script src="../client_assets/js/core/popper.min.js"></script>
-  <script src="../client_assets/js/core/bootstrap.min.js"></script>
-  <script src="../client_assets/js/plugins/perfect-scrollbar.min.js"></script>
-  <script src="../client_assets/js/plugins/smooth-scrollbar.min.js"></script>
-  <script>
-    var win = navigator.platform.indexOf('Win') > -1;
-    if (win && document.querySelector('#sidenav-scrollbar')) {
-      var options = {
-        damping: '0.5'
-      }
-      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
-    }
-  </script>
-  <!-- Github buttons -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="../client_assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
 
-    // SHUBHAM- FetchLiveOrders function starts here
-
-    $(document).ready(function () {
-
-      const clientDetails = JSON.parse(localStorage.getItem('dbUser'));
-      if (clientDetails && clientDetails.cid) {
-        const cid = clientDetails.cid;
-        function fetchLiveOrders() {
-  $.ajax({
-    url: 'https://minitgo.com/api/fetch_live_orders.php',
-    type: 'POST',
-    dataType: 'json',
-    data: JSON.stringify({ cid: cid }),
-    success: function (data) {
-      console.log("running live orders and total orders");
-
-      if (data.status == false) {
-        $('#demoTable tbody').empty(); // Clear existing table rows
-        return 0;
-      } else {
-        $('#demoTable tbody').empty();
-        $.each(data, function (index, order) {
-          var row = $('<tr></tr>');
-          row.append(
-            '<td><div class="d-flex px-2 py-1"><div><img src= '+ order.product_image +' class="avatar avatar-sm me-3" alt="user1"></div><div class="d-flex flex-column justify-content-center"><h6 class="mb-0 text-sm">' +
-            order.product_title +
-            '</h6><p class="text-xs text-secondary mb-0 badge badge-sm">Qty: ' + order.quantity +
-            ' Colour: ' + (order.product_color ? order.product_color : 'N/A') + '</p></div></div></td>');
-          row.append('<td><p class="text-lg badge badge-sm text-secondary mb-0">₹ ' + order.product_price + '</p></td>');
-          row.append(
-            '<td><p class="text-xs font-weight-bold mb-0 badge text-white bg-gradient-secondary">' +
-            order.oid + '</p><p class="text-xs badge text-secondary mb-0">' + order.payment_mode + '</p></td>');
-          row.append(
-            '<td class="align-middle text-center text-sm"><span class="badge badge-sm bg-gradient-warning">' +
-            order.product_status + '</span></td>');
-          row.append(
-            '<td class="align-middle text-center"><span class="text-secondary text-xs font-weight-bold">' +
-            order.date + '</span></td>');
-          row.append(
-            '<td class="align-middle text-center"><span class="text-secondary text-xs font-weight-bold">' +
-            order.time + '</span></td>');
-          row.append(
-            '<td class="align-middle"><a href="javascript:;" class="cancel-order badge badge-sm bg-gradient-danger" data-oid="' + order.oid + '">Cancel Order</a></td>'
-          );
-          $('#demoTable tbody').append(row);
-        });
-
-        // Attach event listener for cancel order button
-        $('.cancel-order').on('click', function () {
-          var oid = $(this).data('oid');
-
-          // Show confirmation dialog
-          var confirmCancel = confirm("Are you sure you want to cancel the order?");
-
-          // If user confirms the cancellation
-          if (confirmCancel) {
-            // Send cancel order request to API
-            $.ajax({
-              url: 'https://minitgo.com/api/cancel_live_order.php', // API endpoint for cancel order
-              type: 'POST',
-              dataType: 'json',
-              headers: {
-                'X-API-Key': 'be0fbece0783dc6732b25d5fee7886b9' // Include the X-API-Key in the request
-              },
-              data: JSON.stringify({ 
-                clientStatus: 'rejected',  // Send clientStatus as 'rejected'
-                cid: cid,                  // Include cid
-                oid: oid                   // Include oid
-              }),
-              success: function (response) {
-                if (response.status == true) {
-                   
-                  fetchLiveOrders(); // Refresh the orders
-                } else {
-                  alert('Failed to cancel order');
-                }
-              },
-              error: function (xhr, status, error) {
-                console.error('Error canceling order:', error);
-              }
-            });
+        <!--   Core JS Files   -->
+        <script src="../client_assets/js/core/popper.min.js"></script>
+        <script src="../client_assets/js/core/bootstrap.min.js"></script>
+        <script src="../client_assets/js/plugins/perfect-scrollbar.min.js"></script>
+        <script src="../client_assets/js/plugins/smooth-scrollbar.min.js"></script>
+        <script>
+          var win = navigator.platform.indexOf('Win') > -1;
+          if (win && document.querySelector('#sidenav-scrollbar')) {
+            var options = {
+              damping: '0.5'
+            }
+            Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
           }
-          // If user cancels the confirmation, do nothing
-        });
-      }
-    },
-    error: function (xhr, status, error) {
-      console.error('Error fetching data:', error);
-    },
-    complete: function () {
-      setTimeout(fetchLiveOrders, 500); // Automatically refresh orders every 500ms
-    }
-  });
-}
+        </script>
+        <!-- Github buttons -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+        <script src="../client_assets/js/soft-ui-dashboard.min.js?v=1.0.3"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
 
+          // SHUBHAM- FetchLiveOrders function starts here
 
-        fetchLiveOrders();
+          $(document).ready(function () {
 
-      }
-      else {
-        console.error('Client details not found in local storage.');
-      }
+            const clientDetails = JSON.parse(localStorage.getItem('dbUser'));
+            if (clientDetails && clientDetails.cid) {
+              const cid = clientDetails.cid;
+              function fetchLiveOrders() {
+                $.ajax({
+                  url: 'https://minitzgo.com/api/fetch_live_orders.php',
+                  type: 'POST',
+                  dataType: 'json',
+                  contentType: 'application/json', // Important for JSON data
+                  headers: {
+                    'X-API-Key': '9fbcd848f047c400b3f4398655c8c9ac80addaefca5d4f7f40bdfdc749e2c0dd', // Your API key
+                  },
+                  data: JSON.stringify({ cid: cid }),
+                  success: function (data) {
+                    console.log("running live orders and total orders");
 
-    });
+                    if (data.status == false) {
+                      $('#demoTable tbody').empty(); // Clear existing table rows
+                      return 0;
+                    } else {
+                      $('#demoTable tbody').empty();
+                      $.each(data, function (index, order) {
+                        var row = $('<tr></tr>');
+                        row.append(
+                          '<td><div class="d-flex px-2 py-1"><div><img src= ' + order.product_image + ' class="avatar avatar-sm me-3" alt="user1"></div><div class="d-flex flex-column justify-content-center"><h6 class="mb-0 text-sm">' +
+                          order.product_title +
+                          '</h6><p class="text-xs text-secondary mb-0 badge badge-sm">Qty: ' + order.quantity +
+                          ' Colour: ' + (order.product_color ? order.product_color : 'N/A') + '</p></div></div></td>');
+                        row.append('<td><p class="text-lg badge badge-sm text-secondary mb-0">₹ ' + order.product_price + '</p></td>');
+                        row.append(
+                          '<td><p class="text-xs font-weight-bold mb-0 badge text-white bg-gradient-secondary">' +
+                          order.oid + '</p><p class="text-xs badge text-secondary mb-0">' + order.payment_mode + '</p></td>');
+                        row.append(
+                          '<td class="align-middle text-center text-sm"><span class="badge badge-sm bg-gradient-warning">' +
+                          order.product_status + '</span></td>');
+                        row.append(
+                          '<td class="align-middle text-center"><span class="text-secondary text-xs font-weight-bold">' +
+                          order.date + '</span></td>');
+                        row.append(
+                          '<td class="align-middle text-center"><span class="text-secondary text-xs font-weight-bold">' +
+                          order.time + '</span></td>');
+                        row.append(
+                          '<td class="align-middle"><a href="javascript:;" class="cancel-order badge badge-sm bg-gradient-danger" data-oid="' + order.oid + '">Cancel Order</a></td>'
+                        );
+                        $('#demoTable tbody').append(row);
+                      });
 
-    // FetchLiveOrders function ends here
+                      // Attach event listener for cancel order button
+                      $('.cancel-order').on('click', function () {
+                        var oid = $(this).data('oid');
 
+                        // Show confirmation dialog
+                        var confirmCancel = confirm("Are you sure you want to cancel the order?");
 
+                        // If user confirms the cancellation
+                        if (confirmCancel) {
+                          // Send cancel order request to API
+                          $.ajax({
+                            url: 'https://minitzgo.com/api/cancel_live_order.php', // API endpoint for cancel order
+                            type: 'POST',
+                            dataType: 'json',
+                            contentType: 'application/json',
+                            headers: {
+                              'X-API-Key': 'd0145238fabc26381f3e493ef5103144c6c496280d015bf23cef9ae3b09e87aa' // Include the X-API-Key in the request
+                            },
+                            data: JSON.stringify({
+                              clientStatus: 'rejected',  // Send clientStatus as 'rejected'
+                              cid: cid,                  // Include cid
+                              oid: oid                   // Include oid
+                            }),
+                            success: function (response) {
+                              if (response.status == true) {
 
-
-     // SHUBHAM- FetchTotalOrders starts here
-    $(document).ready(function () {
-
-      const clientDetails = JSON.parse(localStorage.getItem('dbUser'));
-      if (clientDetails && clientDetails.cid) {
-        const cid = clientDetails.cid;
-       
-        function fetchTotalOrders() {
-          $.ajax({
-            url: 'https://minitgo.com/api/fetch_total_orders.php', 
-            type: 'POST',
-            dataType: 'json',
-            data: JSON.stringify({ cid: cid }), 
-            success: function (data) {
-              
-              //console.log("TABLES ORDERS:", data)
-              if (data.status == false) {
-                $('#totalorders tbody').empty(); 
-                return 0
-              } else {
-                $('#totalorders tbody').empty(); 
-                $.each(data, function (index, order) {
-                  var row = $('<tr></tr>');
-                  row.append(
-                    '<td><div class="d-flex px-2 py-1"><div><img src='+order.product_image+' class="avatar avatar-sm me-3" alt="user1"></div><div class="d-flex flex-column justify-content-center"><h6 class="mb-0 text-sm">' +
-                    order.product_title +
-                    '</h6><p class="text-xs text-secondary mb-0 badge badge-sm">Qty: ' + order.quantity +
-                    ' Colour: ' + order.product_color + '</p></div></div></td>');
-                  row.append('<td><p class="text-lg badge badge-sm text-secondary mb-0">₹ ' + order
-                    .product_price + '</p></td>');
-                  row.append(
-                    '<td><p class="text-xs font-weight-bold mb-0 badge text-white bg-gradient-secondary">' +
-                    order.oid + '</p><p class="text-xxs badge text-secondary mb-0">' + order
-                      .payment_mode + ' / <span class="text-success fs-6"> '+ order.client_amount +'₹</span></p></td>');
-                  row.append(
-                    '<td class="align-middle text-center text-sm"><span class="badge badge-sm bg-gradient-primary">' +
-                    order.product_status + '</span></td>');
-                  row.append(
-                    '<td class="align-middle text-center"><span class="text-secondary text-xs font-weight-bold">' +
-                    order.date + '</span></td>');
-                  row.append(
-                    '<td class="align-middle text-center"><span class="text-secondary text-xs font-weight-bold">' +
-                    order.time + '</span></td>');
-                  $('#totalorders tbody').append(row);
+                                fetchLiveOrders(); // Refresh the orders
+                              } else {
+                                alert('Failed to cancel order');
+                              }
+                            },
+                            error: function (xhr, status, error) {
+                              console.error('Error canceling order:', error);
+                            }
+                          });
+                        }
+                        // If user cancels the confirmation, do nothing
+                      });
+                    }
+                  },
+                  error: function (xhr, status, error) {
+                    console.error('Error fetching data:', error);
+                  },
+                  complete: function () {
+                    setTimeout(fetchLiveOrders, 500); // Automatically refresh orders every 500ms
+                  }
                 });
               }
 
-            },
-            error: function (xhr, status, error) {
-              console.error('Error fetching data:', error);
-            },
-            complete: function () {
-              setTimeout(fetchTotalOrders, 500);
+
+              fetchLiveOrders();
+
+            }
+            else {
+              console.error('Client details not found in local storage.');
+            }
+
+          });
+
+          // FetchLiveOrders function ends here
+
+
+
+
+          // SHUBHAM- FetchTotalOrders starts here
+          $(document).ready(function () {
+
+            const clientDetails = JSON.parse(localStorage.getItem('dbUser'));
+            if (clientDetails && clientDetails.cid) {
+              const cid = clientDetails.cid;
+
+              function fetchTotalOrders() {
+                $.ajax({
+                  url: 'https://minitzgo.com/api/fetch_total_orders.php',
+                  type: 'POST',
+                  dataType: 'json',
+                  contentType: 'application/json',
+                  headers: {
+                    'X-API-Key': 'f32e401354228431eeedbe468055f9ed7abcbe3348bf96304e977a2d70af6ab8' // Include the X-API-Key in the request
+                  },
+                  data: JSON.stringify({ cid: cid }),
+                  success: function (data) {
+
+                    //console.log("TABLES ORDERS:", data)
+                    if (data.status == false) {
+                      $('#totalorders tbody').empty();
+                      return 0
+                    } else {
+                      $('#totalorders tbody').empty();
+                      $.each(data, function (index, order) {
+                        var row = $('<tr></tr>');
+                        row.append(
+                          '<td><div class="d-flex px-2 py-1"><div><img src=' + order.product_image + ' class="avatar avatar-sm me-3" alt="user1"></div><div class="d-flex flex-column justify-content-center"><h6 class="mb-0 text-sm">' +
+                          order.product_title +
+                          '</h6><p class="text-xs text-secondary mb-0 badge badge-sm">Qty: ' + order.quantity +
+                          ' Colour: ' + order.product_color + '</p></div></div></td>');
+                        row.append('<td><p class="text-lg badge badge-sm text-secondary mb-0">₹ ' + order
+                          .product_price + '</p></td>');
+                        row.append(
+                          '<td><p class="text-xs font-weight-bold mb-0 badge text-white bg-gradient-secondary">' +
+                          order.oid + '</p><p class="text-xxs badge text-secondary mb-0">' + order
+                            .payment_mode + ' / <span class="text-success fs-6"> ' + order.client_amount + '₹</span></p></td>');
+                        row.append(
+                          '<td class="align-middle text-center text-sm"><span class="badge badge-sm bg-gradient-primary">' +
+                          order.product_status + '</span></td>');
+                        row.append(
+                          '<td class="align-middle text-center"><span class="text-secondary text-xs font-weight-bold">' +
+                          order.date + '</span></td>');
+                        row.append(
+                          '<td class="align-middle text-center"><span class="text-secondary text-xs font-weight-bold">' +
+                          order.time + '</span></td>');
+                        $('#totalorders tbody').append(row);
+                      });
+                    }
+
+                  },
+                  error: function (xhr, status, error) {
+                    console.error('Error fetching data:', error);
+                  },
+                  complete: function () {
+                    setTimeout(fetchTotalOrders, 500);
+                  }
+                });
+
+
+              }
+              fetchTotalOrders();
+
+            }
+            else {
+              console.error('Client details not found in local storage.');
             }
           });
 
-
-        }
-        fetchTotalOrders();
-
-      }
-      else {
-        console.error('Client details not found in local storage.');
-      }
-    });
-
-    // FetchTotalOrders ends here
+          // FetchTotalOrders ends here
 
 
 
-  </script>
-  <script src="../client_assets/js/orders.js"></script>
-  <script src="../client_assets/js/notification.js"></script>  
-  <script src ="../client_assets/js/sidenav/sidenav.js"></script>      
+        </script>
+        <script src="../client_assets/js/orders.js"></script>
+        <script src="../client_assets/js/notification.js"></script>
+        <script src="../client_assets/js/sidenav/sidenav.js"></script>
 
-  <audio id="notificationSound">
-      <source src="../client_assets/sound/xperia-x10-sms-1193.mp3" type="audio/wav">
-      Your browser does not support the audio element.
-  </audio>
+        <audio id="notificationSound">
+          <source src="../client_assets/sound/xperia-x10-sms-1193.mp3" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
 </body>
 
 </html>
